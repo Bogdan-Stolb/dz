@@ -1,50 +1,60 @@
-# решение 1 скрина:
 
-# for A in range(1000):
-#     for x in range(1000):
-#         if (not(((x&28!=0) or (x&45!=0)) <= ((x&17 == 0 ) <= (x&A != 0) ))):
-#             break
-#     else:
-#         print(A)
-#         break
+from math import *
 
-# решение 2 скрина:
-#
-# P = list(range(130, 172))
-# Q = list(range(150, 186))
-# A = []
-#
-# for x in range(1000):
-#     if not((x in P) <= (((x in Q) and (not(x in A))) <= (not(x in P)))):
-#         A.append(x)
-#
-# print(A)
-# print(A[-1]-A[0])
+#tip 11 n 5081
 
-# решение 3 скрина:
+# 1 sim == 3 bita
+# na pass = 18 bit
 
-# A = [i for i in range(-1000,1000)]
-#
-# for x in range(-1000,1000):
-#     if (not((x in A) <= (x**2 <= 100)) and ((x**2<=64 ) <= (x in A))):
-#         A.remove(x)
-#
-# print(A)
-# print(A[-1]-A[0])
+# print(ceil(18/8))
 
-# решение 4 скрина:
+# 3 bayta na pass
 
-# def tr(m, n, k):
-#     return (m + n > k) and (m + k > n) and (n + k > m)
-#
-# def mx(a, b):
-#     return a if a > b else b
-#
-# for A in range(-2 , 1000):
-#     for x in range(-2 ,1000):
-#         if not(not((tr(x, 11, 16) == (not(mx(x, 5) > 10))) and tr(4, A, x))):
-#             break
-#     else:
-#         print(A)
-#         break
-#         ne polychilos ((((
+# print(13 * 100)
+
+# otvet:1300
+
+# tip 11 n10289
+
+# 1 sim = 3 bit
+# na pass = 45 bit
+
+# print(ceil(45/8))
+
+# 6 bayt na pass
+
+# print(6*20)
+
+# 120 bayt na pass dlya 20 us
+
+# 200 byat dop inf o 20 us
+
+# print(200//20)
+
+# otvet : 10
+
+# tip 11 n 4582
+
+# 3 bit na 1 sim pass
+
+# 3 * 9 = 27 <- sim na ves pass
+
+# print(ceil(27/8))
+
+# 4 bayt na 1 pass
+
+# print(50*4)
+
+# otvet:200
+
+#tip 11 n 4841
+
+# 9 sim v alf
+# 4 bit na sim <- N alf
+
+# 4*15 = 60 <- bit na 1 pass
+# print(ceil(60/8))
+# 8 bayt na 1 pass
+
+# print(8*30)
+# otvet:240
